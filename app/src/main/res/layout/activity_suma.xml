@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="@string/introduce_los_sumandos_y_npulsa_suma_para_ver_el_resultado"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSumando1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="268dp"
+        android:text="@string/ver_suma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSumando1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:autofillHints="0"
+        android:ems="5"
+        android:hint="@string/sumando_1"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSumando2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSumando2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:autofillHints="0"
+        android:ems="5"
+        android:hint="@string/sumando_2"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/txtSuma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:ems="5"
+        android:hint="@string/resultado"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSuma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

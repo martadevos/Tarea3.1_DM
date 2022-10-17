@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Tarea3.1_DM</string>
+    <string name="texto_para_cambiar_color">Texto para cambiar color</string>
+    <string name="introduce_un_texto_y_selecciona_el_color_en_que_mostrarlo">Introduce un texto y selecciona el color en que mostrarlo</string>
+    <string name="azul">Azul</string>
+    <string name="rojo">Rojo</string>
+    <string name="verde">Verde</string>
+    <string name="title_activity_suma">SumaActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="cambiar_color">Cambiar color</string>
+    <string name="inicio">Inicio</string>
+    <string name="acciones_imagenes">Acciones imagenes</string>
+    <string name="suma">Suma</string>
+    <string name="galer_a">Galería</string>
+    <string name="cambio_imagen">Cambio imagen</string>
+    <string name="acciones_texto">Acciones texto</string>
+    <string name="colorear_texto">Colorear texto</string>
+    <string name="alinear_texto">Alinear texto</string>
+    <string name="tama_o_de_texto">Tamaño de texto</string>
+    <string name="propiedades_de_texto">Propiedades de texto</string>
+    <string name="introduce_los_sumandos_y_npulsa_suma_para_ver_el_resultado">Introduce los sumandos y \npulsa suma para ver el resultado</string>
+    <string name="sumando_1">Sumando 1</string>
+    <string name="ver_suma">Ver suma</string>
+    <string name="sumando_2">Sumando 2</string>
+    <string name="resultado">Resultado</string>
+    <string name="introduce_un_texto_de_varias_lineas_para_alinearlo">Introduce un texto de varias líneas para alinearlo</string>
+    <string name="derecha">Derecha</string>
+    <string name="izquierda">Izquierda</string>
+</resources>

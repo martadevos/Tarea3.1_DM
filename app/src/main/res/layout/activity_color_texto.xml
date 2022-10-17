@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="@string/introduce_un_texto_y_selecciona_el_color_en_que_mostrarlo"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCambioColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCambioColor"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:ems="15"
+        android:hint="@string/texto_para_cambiar_color"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupColores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="@string/texto_para_cambiar_color"
+        android:inputType="text" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupColores"
+        android:layout_width="251dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnCambiarColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/radioButtonRojo"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingHorizontal="10dp"
+            android:text="@string/rojo"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="501dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAzul"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingHorizontal="10dp"
+            android:text="@string/azul"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="501dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingHorizontal="10dp"
+            android:text="@string/verde"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="501dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCambiarColor"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="200dp"
+        android:text="@string/cambiar_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
