@@ -33,4 +33,7 @@
     <string name="introduce_un_texto_de_varias_lineas_para_alinearlo">Introduce un texto de varias líneas para alinearlo</string>
     <string name="derecha">Derecha</string>
     <string name="izquierda">Izquierda</string>
+    <string name="introduce_un_texto_para_disminuir_o_aumentar_su_tama_o">Introduce un texto para disminuir o aumentar su tamaño</string>
+    <string name="mas">más</string>
+    <string name="menos">menos</string>
 </resources>

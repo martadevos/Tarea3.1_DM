@@ -31,49 +31,4 @@ class SumaActivity : AppCompatActivity() {
             txtSuma?.text = "La suma es: $sumando1 + $sumando2 = $suma"
         }
     }
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        val inflater: MenuInflater = menuInflater
-        inflater.inflate(R.menu.app_menu, menu)
-        return true
-    }
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        //Hace que cada opción del menú lleve a su correspondiente página al pulsarlo
-        return when (item.itemId) {
-            R.id.inicio -> {
-                val intent = Intent(this, MainActivity::class.java)
-                setContentView(R.layout.activity_inicio)
-                true
-            }
-            R.id.suma -> {
-                val intent = Intent(this, SumaActivity::class.java)
-                startActivity(intent)
-                true
-            }
-            R.id.galeria -> {
-                val intent = Intent(this, GaleriaActivity::class.java)
-                true
-            }
-            R.id.cambioImagen -> {
-                val intent = Intent(this, CambioImagenActivity::class.java)
-                true
-            }
-            R.id.colorearTexto -> {
-                val intent = Intent(this, ColorTextoActivity::class.java)
-                true
-            }
-            R.id.alinearTexto -> {
-                val intent = Intent(this, AlinearTextoActivity::class.java)
-                true
-            }
-            R.id.tamanoTexto -> {
-                val intent = Intent(this, TamanoTextoActivity::class.java)
-                true
-            }
-            R.id.propiedadesTexto -> {
-                val intent = Intent(this, PropiedadesTextoActivity::class.java)
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
 }

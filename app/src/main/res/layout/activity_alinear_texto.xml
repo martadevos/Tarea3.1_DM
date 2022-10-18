@@ -7,13 +7,12 @@
     tools:context=".AlinearTextoActivity">
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/editTextTextAlinear"
         android:layout_width="318dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        android:autofillHints="Hola"
         android:ems="10"
-        android:gravity="start|top"
+        android:gravity="center|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/btnIzda"
@@ -28,7 +27,7 @@
         android:layout_marginBottom="50dp"
         android:textSize="15sp"
         android:text="@string/introduce_un_texto_de_varias_lineas_para_alinearlo"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextAlinear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
@@ -37,20 +36,20 @@
         android:id="@+id/btnIzda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
         android:layout_marginBottom="100dp"
         android:text="@string/izquierda"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnDcha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
         android:layout_marginBottom="100dp"
         android:text="@string/derecha"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
