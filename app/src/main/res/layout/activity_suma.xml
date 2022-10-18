@@ -13,7 +13,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextSumando1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnSuma"

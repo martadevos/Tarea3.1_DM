@@ -36,4 +36,12 @@
     <string name="introduce_un_texto_para_disminuir_o_aumentar_su_tama_o">Introduce un texto para disminuir o aumentar su tamaño</string>
     <string name="mas">más</string>
     <string name="menos">menos</string>
+    <string name="color_rojo">Color rojo</string>
+    <string name="fuente_minuscula">Fuente minúscula</string>
+    <string name="fuente_gigante">Fuente gigante</string>
+    <string name="negrita">Negrita</string>
+    <string name="escribe_algo">Escribe algo</string>
+    <string name="pulsa_los_check_box_y_cambia_las_propiedades_del_texto">Pulsa los check box y cambia las propiedades del texto</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="anterior">Anterior</string>
 </resources>

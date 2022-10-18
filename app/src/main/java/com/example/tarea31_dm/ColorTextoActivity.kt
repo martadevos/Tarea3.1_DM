@@ -14,15 +14,15 @@ class ColorTextoActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeLi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_color_texto)
-        //Declara el texto a colorear, el boton para cambiar de color y los radioButtons de los colores
+        //Asigna el texto a colorear y los radioButtons de cambiar los colores
         editTextCambioColor = findViewById(R.id.editTextCambioColor)
         radioButtonRojo = findViewById(R.id.radioButtonRojo)
         radioButtonAzul = findViewById(R.id.radioButtonAzul)
         radioButtonVerde = findViewById(R.id.radioButtonVerde)
+        //Pone un listener para cuando cambia el radio button seleccionado
         radioButtonRojo?.setOnCheckedChangeListener(this)
         radioButtonAzul?.setOnCheckedChangeListener(this)
         radioButtonVerde?.setOnCheckedChangeListener(this)
-        //Si se pulsa el botón de cambiar color, cambia el color del texto al color que esté seleccionado
 
     }
 
