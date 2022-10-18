@@ -3,7 +3,6 @@ package com.example.tarea31_dm
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.*
 
 class ColorTextoActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener {

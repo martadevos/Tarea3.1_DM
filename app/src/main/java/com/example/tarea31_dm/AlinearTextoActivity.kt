@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
-import android.view.View.TEXT_ALIGNMENT_TEXT_END
-import android.view.View.TEXT_ALIGNMENT_TEXT_START
 import android.widget.Button
 import android.widget.EditText
 
@@ -27,8 +25,8 @@ class AlinearTextoActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(p0: View?) {
         when(p0?.id){
-            btnDcha?.id -> editTextTextAlinear?.gravity = Gravity.RIGHT
-            btnIzda?.id -> editTextTextAlinear?.gravity = Gravity.LEFT
+            btnDcha?.id -> editTextTextAlinear?.gravity = Gravity.END
+            btnIzda?.id -> editTextTextAlinear?.gravity = Gravity.START
         }
     }
 }
