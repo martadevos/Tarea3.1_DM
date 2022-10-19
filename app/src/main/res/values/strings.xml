@@ -44,4 +44,5 @@
     <string name="pulsa_los_check_box_y_cambia_las_propiedades_del_texto">Pulsa los check box y cambia las propiedades del texto</string>
     <string name="siguiente">Siguiente</string>
     <string name="anterior">Anterior</string>
+    <string name="imagen_que_cambia_al_pulsarla">Imagen que cambia al pulsarla</string>
 </resources>
