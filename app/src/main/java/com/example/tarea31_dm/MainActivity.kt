@@ -1,73 +1,49 @@
 package com.example.tarea31_dm
 
-import android.content.Intent
-import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
-import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.RadioButton
-import android.widget.TextView
+import com.google.android.material.navigation.NavigationView
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.NavHostFragment
+import com.example.tarea31_dm.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var appBarConfiguration:AppBarConfiguration
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inicio)
-    }
+        binding= ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setSupportActionBar(binding.appBarMain.toolbar)
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
+        val navController = navHostFragment.navController
 
+        val drawerLayout: DrawerLayout = binding.drawerLayout
+        val navView:NavigationView = binding.navView
+
+        appBarConfiguration = AppBarConfiguration(setOf(
+            R.id.nav_inicioFragment, R.id.nav_sumaFragment,
+            R.id.nav_galeriaFragment, R.id.nav_cambioImagenFragment,
+            R.id.nav_alinearTextoFragment, R.id.nav_propiedadestextoFragment,
+            R.id.nav_colorTextoFragment, R.id.nav_tamanoTextoFragment), drawerLayout)
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
+    }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        val inflater: MenuInflater = menuInflater
-        inflater.inflate(R.menu.app_menu, menu)
+        menuInflater.inflate(R.menu.activity_main_drawer, menu)
         return true
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        //Hace que cada opción del menú lleve a su correspondiente página y actividad al pulsarlo
-        return when (item.itemId) {
-            R.id.inicio -> {
-                val intent = Intent(this, MainActivity::class.java)
-                true
-            }
-            R.id.suma -> {
-                val intent = Intent(this, SumaActivity::class.java)
-                startActivity(intent)
-                true
-            }
-            R.id.galeria -> {
-                val intent = Intent(this, GaleriaActivity::class.java)
-                startActivity(intent)
-                true
-            }
-            R.id.cambioImagen -> {
-                val intent = Intent(this, CambioImagenActivity::class.java)
-                startActivity(intent)
-                true
-            }
-            R.id.colorearTexto -> {
-                val intent = Intent(this, ColorTextoActivity::class.java)
-                startActivity(intent)
-                true
-            }
-            R.id.alinearTexto -> {
-                val intent = Intent(this, AlinearTextoActivity::class.java)
-                startActivity(intent)
-                true
-            }
-            R.id.tamanoTexto -> {
-                val intent = Intent(this, TamanoTextoActivity::class.java)
-                startActivity(intent)
-                true
-            }
-            R.id.propiedadesTexto -> {
-                val intent = Intent(this, PropiedadesTextoActivity::class.java)
-                startActivity(intent)
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        return navController.navigateUp(appBarConfiguration)||super.onSupportNavigateUp()
     }
 }

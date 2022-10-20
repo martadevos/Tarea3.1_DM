@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PropiedadesTextoActivity">
+    tools:context=".PropiedadestextoFragment">
 
     <TextView
         android:id="@+id/textViewPropiedades"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:text="@string/pulsa_los_check_box_y_cambia_las_propiedades_del_texto"
+        android:text="@string/txt_propiedades_texto"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/checkBoxColorRojo"

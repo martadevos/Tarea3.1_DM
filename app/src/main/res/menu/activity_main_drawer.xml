@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/inicio"
+        android:title="@string/inicio" />
+
+    <item
+        android:id="@+id/suma"
+        android:title="@string/suma" />
+
+    <item
+        android:id="@+id/galeria"
+        android:title="@string/galer_a" />
+
+    <item
+        android:id="@+id/cambioImagen"
+        android:title="@string/cambio_imagen" />
+
+    <item
+        android:id="@+id/colorearTexto"
+        android:title="@string/colorear_texto" />
+
+    <item
+        android:id="@+id/alinearTexto"
+        android:title="@string/alinear_texto" />
+
+    <item
+        android:id="@+id/tamanoTexto"
+        android:title="@string/tama_o_de_texto" />
+
+    <item
+        android:id="@+id/propiedadesTexto"
+        android:title="@string/propiedades_de_texto" />
+
+</menu>

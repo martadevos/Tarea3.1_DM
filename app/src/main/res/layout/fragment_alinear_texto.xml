@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AlinearTextoActivity">
+    android:layout_height="match_parent">
 
     <EditText
         android:id="@+id/editTextTextAlinear"
@@ -27,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:text="@string/introduce_un_texto_de_varias_lineas_para_alinearlo"
+        android:text="@string/txt_alinear_texto"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextAlinear"
         app:layout_constraintEnd_toEndOf="parent"

@@ -3,26 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/nav_inicioFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.tarea31_dm.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first" >
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
+        android:id="@+id/nav_inicioFragment"
+        android:name="com.example.tarea31_dm.InicioFragment"
+        android:label="activity_inicio"
+        tools:layout="@layout/fragment_inicio" />
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.tarea31_dm.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second" >
+        android:id="@+id/nav_sumaFragment"
+        android:name="com.example.tarea31_dm.SumaFragment"
+        android:label="fragment_suma"
+        tools:layout="@layout/fragment_suma" />
 
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+    <fragment
+        android:id="@+id/nav_galeriaFragment"
+        android:name="com.example.tarea31_dm.GaleriaFragment"
+        android:label="GaleriaFragment"
+        tools:layout="@layout/fragment_galeria"/>
+    <fragment
+        android:id="@+id/nav_propiedadestextoFragment"
+        android:name="com.example.tarea31_dm.PropiedadestextoFragment"
+        android:label="fragment_propiedades_texto"
+        tools:layout="@layout/fragment_propiedades_texto" />
+    <fragment
+        android:id="@+id/nav_alinearTextoFragment"
+        android:name="com.example.tarea31_dm.AlinearTextoFragment"
+        android:label="AlinearTextoFragment"
+        tools:layout="@layout/fragment_alinear_texto"/>
+    <fragment
+        android:id="@+id/nav_cambioImagenFragment"
+        android:name="com.example.tarea31_dm.CambioImagenFragment"
+        android:label="CambioImagenFragment"
+        tools:layout="@layout/fragment_cambio_imagen"/>
+    <fragment
+        android:id="@+id/nav_tamanoTextoFragment"
+        android:name="com.example.tarea31_dm.TamanoTextoFragment"
+        android:label="TamanoTextoFragment"
+        tools:layout="@layout/fragment_tamano_texto"/>
+    <fragment
+        android:id="@+id/nav_colorTextoFragment"
+        android:name="com.example.tarea31_dm.ColorTextoFragment"
+        android:label="ColorTextoFragment"
+        tools:layout="@layout/fragment_color_texto"/>
 </navigation>

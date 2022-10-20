@@ -12,8 +12,6 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="cambiar_color">Cambiar color</string>
     <string name="inicio">Inicio</string>
     <string name="acciones_imagenes">Acciones imagenes</string>
@@ -25,15 +23,15 @@
     <string name="alinear_texto">Alinear texto</string>
     <string name="tama_o_de_texto">Tamaño de texto</string>
     <string name="propiedades_de_texto">Propiedades de texto</string>
-    <string name="introduce_los_sumandos_y_npulsa_suma_para_ver_el_resultado">Introduce los sumandos y \npulsa suma para ver el resultado</string>
+    <string name="txt_suma">Introduce los sumandos y pulsa suma para ver el resultado</string>
     <string name="sumando_1">Sumando 1</string>
     <string name="ver_suma">Ver suma</string>
     <string name="sumando_2">Sumando 2</string>
     <string name="resultado">Resultado</string>
-    <string name="introduce_un_texto_de_varias_lineas_para_alinearlo">Introduce un texto de varias líneas para alinearlo</string>
+    <string name="txt_alinear_texto">Introduce un texto de varias líneas para alinearlo</string>
     <string name="derecha">Derecha</string>
     <string name="izquierda">Izquierda</string>
-    <string name="introduce_un_texto_para_disminuir_o_aumentar_su_tama_o">Introduce un texto para disminuir o aumentar su tamaño</string>
+    <string name="txt_tamano_texto">Introduce un texto para disminuir o aumentar su tamaño</string>
     <string name="mas">más</string>
     <string name="menos">menos</string>
     <string name="color_rojo">Color rojo</string>
@@ -41,8 +39,11 @@
     <string name="fuente_gigante">Fuente gigante</string>
     <string name="negrita">Negrita</string>
     <string name="escribe_algo">Escribe algo</string>
-    <string name="pulsa_los_check_box_y_cambia_las_propiedades_del_texto">Pulsa los check box y cambia las propiedades del texto</string>
+    <string name="txt_propiedades_texto">Pulsa los check box y cambia las propiedades del texto</string>
     <string name="siguiente">Siguiente</string>
     <string name="anterior">Anterior</string>
     <string name="imagen_que_cambia_al_pulsarla">Imagen que cambia al pulsarla</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imagen">Imagen</string>
 </resources>
