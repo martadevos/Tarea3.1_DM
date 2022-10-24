@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.activity_main_drawer, menu)
+        menuInflater.inflate(R.menu.main, menu)
         return true
     }
 

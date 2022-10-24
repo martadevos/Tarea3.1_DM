@@ -2,36 +2,37 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
+    <!--IMPORTANTE en el id va el id del emento del nav al que queremos que nos lleve-->
     <item
-        android:id="@+id/inicio"
+        android:id="@+id/nav_inicioFragment"
         android:title="@string/inicio" />
 
     <item
-        android:id="@+id/suma"
+        android:id="@+id/nav_sumaFragment"
         android:title="@string/suma" />
 
     <item
-        android:id="@+id/galeria"
+        android:id="@+id/nav_galeriaFragment"
         android:title="@string/galer_a" />
 
     <item
-        android:id="@+id/cambioImagen"
+        android:id="@+id/nav_cambioImagenFragment"
         android:title="@string/cambio_imagen" />
 
     <item
-        android:id="@+id/colorearTexto"
+        android:id="@+id/nav_colorTextoFragment"
         android:title="@string/colorear_texto" />
 
     <item
-        android:id="@+id/alinearTexto"
+        android:id="@+id/nav_alinearTextoFragment"
         android:title="@string/alinear_texto" />
 
     <item
-        android:id="@+id/tamanoTexto"
+        android:id="@+id/nav_tamanoTextoFragment"
         android:title="@string/tama_o_de_texto" />
 
     <item
-        android:id="@+id/propiedadesTexto"
+        android:id="@+id/nav_propiedadestextoFragment"
         android:title="@string/propiedades_de_texto" />
 
 </menu>
